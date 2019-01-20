@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="240dp"
+    android:background="@drawable/text_shape_9dp_white"
+    android:layout_marginLeft="24dp"
+    android:layout_marginRight="24dp"
+    android:layout_marginTop="20dp"
+    android:padding="10dp">
+
+    <Button
+        android:id="@+id/details_comments_item_check"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:padding="0dp"
+        android:text="删"
+        android:textSize="15sp"
+        android:visibility="gone" />
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/details_comments_item_simpe"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_toRightOf="@id/details_comments_item_check"
+        fresco:placeholderImage="@mipmap/common_tab_btn_my_s"
+        fresco:roundedCornerRadius="50dp" />
+
+    <TextView
+        android:id="@+id/details_comments_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/details_comments_item_simpe"
+        android:text="名字" />
+
+    <TextView
+        android:id="@+id/details_comments_item_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:textSize="10sp"
+        android:layout_marginTop="15dp"
+        android:text="2018-12-08 08:26" />
+
+    <TextView
+        android:id="@+id/details_comments_item_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/details_comments_item_simpe"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="12sp"
+        android:layout_marginLeft="5dp"
+        android:text="AAAAAAAAAAAAAAAAAAAAAAAAAAA" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/details_comments_item_data"
+        android:gravity="center"
+        android:id="@+id/datatails_layout"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/details_comments_item_image_1"
+            android:layout_width="0dp"
+            android:layout_height="90dp"
+            android:layout_below="@id/details_comments_item_data"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1" />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/details_comments_item_image_2"
+            android:layout_width="0dp"
+            android:layout_height="90dp"
+            android:layout_below="@id/details_comments_item_data"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1" />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/details_comments_item_image_3"
+            android:layout_width="0dp"
+            android:layout_height="90dp"
+            android:layout_below="@id/details_comments_item_data"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/details_comments_item_zan"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/datatails_layout"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/wonderful_dianzan"
+        android:button="@null" />
+
+</RelativeLayout>
+</RelativeLayout>

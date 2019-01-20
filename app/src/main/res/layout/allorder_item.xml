@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bord_12dp"
+        android:padding="10dp">
+        <TextView
+            android:id="@+id/allorder_item_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="250dp"
+            android:ellipsize="end"
+            android:textSize="12sp"
+            android:singleLine="true"
+            android:text="订单号:111111111111111111"/>
+        <TextView
+            android:id="@+id/allorder_item_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:maxWidth="100dp"
+            android:ellipsize="end"
+            android:textSize="12sp"
+            android:singleLine="true"
+            android:text="2018-12-13"/>
+        <RelativeLayout
+            android:id="@+id/showRec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#2eee"
+            android:layout_below="@id/allorder_item_num"
+            android:padding="10dp">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/allorder_item_showRec"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/allorder_item_allmoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/showRec"
+            android:layout_marginBottom="28dp"
+            android:textColor="#F00"
+            android:text="￥200"/>
+
+        <TextView
+            android:id="@+id/allorder_item_allnum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/showRec"
+            android:layout_toLeftOf="@id/allorder_item_allmoney"
+            android:layout_marginBottom="28dp"
+            android:text="共计X件商品,需要付款"/>
+
+        <Button
+            android:id="@+id/allorder_item_alldelete"
+            android:layout_width="wrap_content"
+            android:padding="0dp"
+            android:layout_height="26dp"
+            android:layout_below="@id/allorder_item_allmoney"
+            android:background="#aaa"
+            android:textColor="#FFF"
+            android:text="取消订单"/>
+
+        <RelativeLayout
+            android:id="@+id/allorder_item_showauto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_below="@id/allorder_item_allmoney">
+            <TextView
+                android:id="@+id/allorder_item_autoname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"/>
+            <TextView
+                android:id="@+id/allorder_item_autonum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/allorder_item_autoname"
+                android:text="@string/app_name"/>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/allorder_item_allpay"
+            android:layout_width="wrap_content"
+            android:padding="0dp"
+            android:layout_height="26dp"
+            android:layout_below="@id/allorder_item_allmoney"
+            android:layout_alignParentRight="true"
+            android:background="#ff5757"
+            android:textColor="#FFF"
+            android:text="去支付"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

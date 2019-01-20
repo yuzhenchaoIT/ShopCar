@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:background="#fff"
+        android:padding="10dp">
+        <CheckBox
+            android:id="@+id/shoppingcar_item_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_toRightOf="@id/shoppingcar_item_check"
+            android:layout_height="100dp"
+            android:background="@drawable/bord_12dp"
+            android:padding="10dp">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/shoppingcar_item_image"
+                android:layout_width="81dp"
+                android:layout_height="81dp"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:id="@+id/shoppingcar_item_name"
+                android:layout_width="wrap_content"
+                android:maxEms="30"
+                android:ellipsize="end"
+                android:textSize="12sp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/shoppingcar_item_image"
+                android:text="AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"/>
+
+            <TextView
+                android:id="@+id/shoppingcar_item_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/shoppingcar_item_image"
+                android:layout_alignParentBottom="true"
+                android:textColor="#F00"
+                android:textSize="14sp"
+                android:text="￥1024"/>
+
+            <com.liu.get.e_commerceproject.ui.myview.MyView_Add
+                android:id="@+id/shoppingcar_item_addsub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true">
+
+            </com.liu.get.e_commerceproject.ui.myview.MyView_Add>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

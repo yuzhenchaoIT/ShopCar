@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".ui.activity.EvaluationActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:layout_marginTop="50dp"
+        android:background="#FFF"
+        android:padding="8dp">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/evaluation_simple_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginRight="20dp" />
+
+        <TextView
+            android:id="@+id/evaluation_text_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/evaluation_simple_image"
+            android:text="AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" />
+
+        <TextView
+            android:id="@+id/evaluation_text_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@id/evaluation_simple_image"
+            android:text="￥0.0"
+            android:textColor="#F00" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/evaluation_edit_evaluation"
+        android:layout_width="match_parent"
+        android:layout_height="97dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/pay_input_7dp"
+        android:gravity="top"
+        android:hint="请在此处输入您对商品的评价"
+        android:padding="5dp"
+        android:inputType="textMultiLine"
+        android:minLines="3" />
+
+    <CheckBox
+        android:id="@+id/evaluation_check_Circle"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="同步到圈子"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:id="@+id/evaluation_btn_published"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pay_btn_7dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="100dp"
+            android:textColor="#FFF"
+            android:text="发表"/>
+    </RelativeLayout>
+
+</LinearLayout>

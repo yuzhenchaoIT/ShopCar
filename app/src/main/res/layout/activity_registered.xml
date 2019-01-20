@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/login_bg"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/registered_image_return"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:src="@mipmap/common_nav_btn_back_n"/>
+
+    <RelativeLayout
+        android:id="@+id/registered_layout_re1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp">
+
+        <EditText
+            android:id="@+id/registered_edit_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="36dp"
+            android:layout_marginRight="36dp"
+            android:hint="手机号"
+            android:paddingLeft="50dp"
+            android:textColor="#FFF"
+            android:textColorHint="#FFF" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="36dp"
+            android:src="@mipmap/login_icon_phone" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/registered_layout_re2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/registered_layout_re1"
+        android:layout_marginTop="20dp">
+
+        <EditText
+            android:id="@+id/registered_edit_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="36dp"
+            android:layout_marginRight="36dp"
+            android:hint="验证码"
+            android:textColor="#FFF"
+            android:paddingLeft="50dp"
+            android:textColorHint="#FFF" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="3dp"
+            android:src="@mipmap/login_icon_safety" />
+        <TextView
+            android:id="@+id/registered_text_getcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#FFF"
+            android:layout_marginRight="36dp"
+            android:text="获取验证码"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/registered_layout_re3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/registered_layout_re2"
+        android:layout_marginTop="18dp">
+
+        <EditText
+            android:id="@+id/registered_edit_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="36dp"
+            android:layout_marginRight="36dp"
+            android:inputType="textPassword"
+            android:hint="密码"
+            android:paddingLeft="50dp"
+            android:textColor="#FFF"
+            android:textColorHint="#FFF" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="36dp"
+            android:src="@mipmap/login_icon_lock" />
+
+        <ImageView
+            android:id="@+id/registered_image_eye"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="36dp"
+            android:layout_marginRight="36dp"
+            android:src="@mipmap/login_icon_eye" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/registered_text_return"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/registered_layout_re3"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="36dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#FFF"
+        android:text="已有账户?立即登陆"/>
+
+    <Button
+        android:id="@+id/registered_button_registered"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="160dp"
+        android:background="@drawable/login_registered_btn"
+        android:text="注册"
+        android:textColor="#ff5f71" />
+
+</RelativeLayout>

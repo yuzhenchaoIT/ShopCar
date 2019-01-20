@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.ShoppingcartFragment"
+    android:orientation="vertical"
+    android:background="#fff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_delete_n"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/common_btn_delete_n" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/shoppingcar_recycle_show"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:background="#FFF"/>
+    <RelativeLayout
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <CheckBox
+            android:id="@+id/shoppingcar_checkbox_checkall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:text="全选"/>
+
+        <TextView
+            android:id="@+id/shoppingcar_text_allmoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#F00"
+            android:layout_toRightOf="@id/shoppingcar_checkbox_checkall"
+            android:layout_centerVertical="true"
+            android:textSize="14sp"
+            android:layout_marginLeft="20dp"
+            android:text="合计:￥0.00"/>
+
+        <Button
+            android:id="@+id/shoppingcar_button_pay"
+            android:layout_width="118dp"
+            android:layout_height="match_parent"
+            android:background="#ff5e70"
+            android:layout_alignParentRight="true"
+            android:textColor="#FFF"
+            android:text="去结算"/>
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="160dp"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:gravity="center_horizontal">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@drawable/bord_8dp">
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/myfootprin_item_simple"
+            android:layout_width="150dp"
+            android:layout_height="170dp" />
+
+        <TextView
+            android:id="@+id/myfootprin_item_name"
+            android:layout_width="wrap_content"
+            android:maxEms="5"
+            android:layout_height="20dp"
+            android:layout_below="@id/myfootprin_item_simple"
+            android:text="AAAA"/>
+        <TextView
+            android:id="@+id/myfootprin_item_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/myfootprin_item_name"
+            android:textColor="#F00"
+            android:layout_marginTop="10dp"
+            android:text="￥0.0"/>
+        <TextView
+            android:id="@+id/myfootprin_item_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/myfootprin_item_name"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:text="已浏览1次"/>
+
+        <TextView
+            android:id="@+id/myfootprin_item_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/myfootprin_item_num"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:text="2018-12-12"/>
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/myfootprin_item_id"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="match_parent"
+        android:text="id"/>
+
+</LinearLayout>

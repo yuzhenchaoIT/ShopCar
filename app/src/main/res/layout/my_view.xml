@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/my_add"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="#fff"
+        android:textSize="20sp"
+        android:text="+"/>
+    <TextView
+        android:id="@+id/my_nums"
+        android:layout_width="30dp"
+        android:layout_height="50dp"
+        android:textSize="15sp"
+        android:background="#E3E3E1"
+        android:gravity="center"
+        android:text="1"/>
+    <Button
+        android:id="@+id/my_sub"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="#fff"
+        android:textSize="20sp"
+        android:text="—"/>
+
+</LinearLayout>

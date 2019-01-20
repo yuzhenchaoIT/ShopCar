@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".ui.fragment.WaitEvaluationFragment">
+
+    <!--<com.jcodecraeer.xrecyclerview.XRecyclerView
+        android:id="@+id/waitevaluation_recycler_show"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.jcodecraeer.xrecyclerview.XRecyclerView>-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--<Button
+            android:id="@+id/waitevaluation_button_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@drawable/btn_refresh"
+            android:textColor="#FFF"
+            android:textSize="20dp"
+            android:text="刷新"/>
+             android:layout_below="@id/waitevaluation_button_refresh"
+            -->
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/waitevaluation_recycler_show"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+           >
+
+        </android.support.v7.widget.RecyclerView>
+    </RelativeLayout>
+
+</FrameLayout>
